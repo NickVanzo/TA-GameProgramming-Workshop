@@ -16,7 +16,11 @@ In this workshop, we'll cover the following topics:
   Learn how to access and manipulate class variables from within and outside the class.
 
 - **Class Structure: Header (.h) and Implementation (.cpp) Files**  
-  Discover the importance of separating the class declaration (header file) from its implementation (source file), and learn how to do it.
+  Implement a class by separating the class declaration (header file) from its implementation (source file)
+
+- **Inheritance**
+  See how to inherit some logic from a parent class
+
 
 ## Code Explanation
 
@@ -37,11 +41,14 @@ This file contains the main function that drives the execution of the program. H
  *  - how and why do we divide a class in a .h and a .cpp file?
  */
 int main() {
-    Player player1("Joel", 10, 100);
-    Player player2("Jack", 5, 80);
+    Player player1("Joel", 10);
+    Player player2("Jack", 5);
 
     player1.introduce();
     player2.introduce();
+
+    std::cout << "First GameObject: " << player1.GetObjectName() << std::endl;
+    std::cout << "Second GameObject: " << player2.GetObjectName() << std::endl;
 
     return 0;
 }
@@ -50,6 +57,6 @@ int main() {
 ### Compile and execute the code (`main.cpp`)
 
 ```bash
-g++ main.cpp ./src/Player.cpp -o mygame
+g++ main.cpp ./src/Player.cpp ./src/GameObject.cpp -o mygame
 ./mygame
 ```
