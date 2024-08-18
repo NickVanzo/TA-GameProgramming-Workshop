@@ -45,3 +45,11 @@ int main() {
 
     return 0;
 }
+```
+
+### Compile and execute the code (`main.cpp`)
+
+```bash
+g++ main.cpp ./src/Player.cpp -o mygame
+./mygame
+```
