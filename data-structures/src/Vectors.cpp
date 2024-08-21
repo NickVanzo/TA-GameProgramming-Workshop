@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "../include/GameObject.h"
 
 void vectorExamples()
 {
@@ -30,11 +31,25 @@ void vectorExamples()
   std::cout << "\nback() : g1.back() = " << ids.back();
 }
 
+void vectorWithCustomClass() {
+  std::vector<GameObject> objects;
+  for(int i = 0; i < 10; i++) {
+    //Create a new GameObject and push it inside the "objects" vector
+    GameObject obj("Object#" + std::to_string(i));
+    objects.push_back(obj);
+  }
+
+  for(GameObject o : objects) {
+    std::cout << o.GetObjectName() << std::endl;
+  }
+}
+
 /**
  * This workshop section  shows how to use basic data structures
  */
 int main()
 {
-  vectorExamples();
+  // vectorExamples();
+  vectorWithCustomClass();
   return 0;
 }

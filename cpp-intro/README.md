@@ -8,7 +8,12 @@ You will find the code in the main.cpp file.
 ```bash
 g++ -o executable main.cpp
 ```
-You will now find a file named "executable" in your folder. Let's execute it!
+You will now find a file named "executable" in your folder. Follow the following step to execute it.
+To find out more about other flags of g++ use the following command:
+
+```bash
+g++ --help
+```
 
 ## Second step: execute the program
 
