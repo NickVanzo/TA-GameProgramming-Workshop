@@ -1,4 +1,4 @@
-# C++ Workshop Series
+# C++ Workshop 
 
 ## Introduction
 
@@ -71,9 +71,3 @@ You can use any text editor or Integrated Development Environment (IDE) of your 
 - **VS Code**: [Download here](https://code.visualstudio.com/)
 - **CLion**: [Download here](https://www.jetbrains.com/clion/)
 - **Code::Blocks**: [Download here](http://www.codeblocks.org/)
-
-## How to Run the Examples
-
-1. Clone the repository to your local machine:
-   ```bash
-   git clone git@github.com:NickVanzo/TA-GameProgramming-Workshop.git
