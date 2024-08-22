@@ -9,9 +9,6 @@ void vectorExamples()
   for (int i = 1; i <= 5; i++)
     ids.push_back(i);
 
-  for (auto i = ids.begin(); i != ids.end(); ++i)
-    std::cout << *i << " " << std::endl;
-
   std::cout << "Size : " << ids.size();
   std::cout << "\nCapacity : " << ids.capacity();
   std::cout << "\nMax_Size : " << ids.max_size();

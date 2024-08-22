@@ -14,11 +14,8 @@ void arrayExamples()
   std::cout << "Size : " << size << std::endl;
 
   // Arrays cannot be resized, so no need for resize() or capacity().
-
   std::cout << "First element : " << ids[0] << std::endl;
   std::cout << "Last element : " << ids[size - 1] << std::endl;
-
-  // Arrays can't be empty in the same sense as dynamic containers like vector, set, etc.
 }
 
 /**
